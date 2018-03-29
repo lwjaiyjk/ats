@@ -1,0 +1,5 @@
+---
+#输入参数
+contactInfos: 
+  - name: xxx
+  - name: yyy

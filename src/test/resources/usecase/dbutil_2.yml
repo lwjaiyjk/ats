@@ -1,0 +1,91 @@
+---
+!!com.ctfin.framework.ats.UseCaseInfo
+  id: '测试用例001-id'
+  name: '测试用例001-name'
+  desc: '测试用例001-desc'
+
+---
+#输入参数
+contactInfos: 
+  - name: xxx
+  - name: yyy
+author: yjk
+
+---
+#准备数据库数据 
+ct_user:
+  - id[C]: 2234578
+    username[C]: 'ast_yjk'
+    phone: '1234567890'
+    password: '123456'
+    email: 'yjk@mail.qq.com'
+    status: 1
+    seatid: 342667
+    workno: 'workno_0001'
+    update_time: '@now()#yyyyMMdd'
+    create_time: '@now()#yyyy-MM-dd HH:mm:ss'
+    description: 'ats测试'
+    last_fp_num: 10
+    create_uid: 12345454
+    update_uid: 43566776
+    jobid: 458989
+    last_fp_time: '@now()#yyyy-MM-dd HH:mm:ss'
+  - id[C]: 22345738
+    username: 'ast_yjk'
+    phone: '12345673890'
+    password: '1233456'
+    email: 'yjk3@mail.qq.com'
+    status: 1
+    seatid: 3432667
+    workno: 'workno_00021'
+    update_time: '@now()#yyyyMMdd'
+    create_time: '@now()#yyyy-MM-dd HH:mm:ss'
+    description: 'ats测试'
+    last_fp_num: 10
+    create_uid: 123453454
+    update_uid: 435636776
+    jobid: 4589389
+    last_fp_time: '@now()#yyyy-MM-dd HH:mm:ss'
+
+---
+#期望数据库结果
+ct_user:
+  - id[C]: 2234578
+    username: 'ast_yjk'
+    phone: '1234567890'
+    password: '123456'
+    email: 'yjk@mail.qq.com'
+    status: 1
+    seatid: 342667
+    workno: 'workno_0001'
+    update_time[N]: '@now()#yyyyMMdd'
+    create_time[N]: '@now()#yyyy-MM-dd HH:mm:ss'
+    description: 'ats测试'
+    last_fp_num: 10
+    create_uid: 12345454
+    update_uid: 43566776
+    jobid: 458989
+    last_fp_time[N]: '@now()#yyyy-MM-dd HH:mm:ss'
+  - id[C]: 22345738
+    username: 'ast_yjk'
+    phone: '12345673890'
+    password: '1233456'
+    email: 'yjk3@mail.qq.com'
+    status: 1
+    seatid: 3432667
+    workno: 'workno_00021'
+    update_time[N]: '@now()#yyyyMMdd'
+    create_time[N]: '@now()#yyyy-MM-dd HH:mm:ss'
+    description: 'ats测试'
+    last_fp_num: 10
+    create_uid: 123453454
+    update_uid: 435636776
+    jobid: 4589389
+    last_fp_time[N]: '@now()#yyyy-MM-dd HH:mm:ss'
+---
+#扩展参数1
+
+---
+#扩展参数2
+
+
